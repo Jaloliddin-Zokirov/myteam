@@ -13,3 +13,9 @@ var elMenutwo = document.querySelector('.header__menu');
 elButtontwo.addEventListener('click', function () {
 	elMenutwo.classList.toggle('header__menu--open');
 });
+
+var elBody = document.querySelector('body')
+
+elBody.addEventListener("click", function() {
+	elBody.classList.toggle('overflow')
+})
