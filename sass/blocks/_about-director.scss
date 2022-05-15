@@ -55,7 +55,7 @@
   color: $white;
 }
 
-.item__plus, .item__plus-two, .item__plus-there, .item__plus-four, .item__plus-five, .item__plus-six{
+.item__plus{
   position: absolute;
   left: calc(50% - 25px);
   bottom: -28px;
@@ -68,6 +68,10 @@
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center;
+
+  &:hover{
+    background-color: $rapture-blue;
+  }
 }
 
 .item__subject{
