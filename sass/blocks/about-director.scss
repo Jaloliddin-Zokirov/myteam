@@ -79,6 +79,11 @@
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center;
+
+  &--open{
+    background-color: $rapture-blue;
+    background-image: url("../images/iks-x.svg");
+  }
 }
 
 .item__subject{
@@ -114,8 +119,7 @@
 }
 
 .item__x{
-  background-color: $rapture-blue;
-  background-image: url("../images/iks-x.svg");
+
 }
 
 

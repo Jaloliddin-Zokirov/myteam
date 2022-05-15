@@ -19,3 +19,9 @@ var elBody = document.querySelector('body')
 elBody.addEventListener("click", function() {
 	elBody.classList.toggle('overflow')
 })
+
+var elPlus = document.querySelector('.item__plus')
+
+elPlus.addEventListener('click', function () {
+	elPlus.classList.toggle('.item__plus--open')
+})
