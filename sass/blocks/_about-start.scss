@@ -1,0 +1,91 @@
+.about-start{
+  padding: 4.75rem 0;
+  background-color: $light-coral;
+  background-image: url("../images/start-bgi.svg");
+  background-repeat: no-repeat;
+  background-size: 12.5rem 9rem;
+  background-position: calc(50% - 40.625rem) bottom;
+}
+
+.about-start__box{
+  @include flex-starter;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 57.313rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-start__title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: $sacramento-state-green;
+}
+
+.about-start__link{
+  display: inline-block;
+  padding: 0.625rem 2.063rem;
+  border: 0.125rem solid $sacramento-state-green;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  color: $sacramento-state-green;
+  transition: all 0.2s ease;
+  
+  &:hover{
+    color: $white;
+    background-color: $sacramento-state-green;
+    transition: all 0.2s ease;
+  }
+}
+
+
+
+@media only screen and (max-width: 48rem) {
+
+  .about-start{
+    background-position: calc(50% - 18.125rem) calc(50% + 3.125rem);
+  }
+
+  .about-start__title{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 36.063rem) {
+
+  .about-start{
+    background-position: calc(50% - 11.875rem) calc(50% + 5.375rem);
+  }
+
+  .about-start__box{
+    flex-direction: column;
+  }
+
+  .about-start__title{
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 23.438rem) {
+
+  .about-start{
+    padding: 5.188rem 0;
+    background-position: calc(50% - 5.625rem) calc(50% + 6.25rem);
+  }
+
+  .about-start__box{
+    max-width: 20.438rem;
+    text-align: center;
+  }
+
+  .about-start__title{
+    margin-bottom: 1.5rem;
+  }
+}

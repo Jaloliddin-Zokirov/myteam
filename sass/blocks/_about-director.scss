@@ -21,6 +21,7 @@
   @include flex-starter;
   @include list-global;
   flex-wrap: wrap;
+  margin: -38px -15px;
 }
 
 .director__item{
@@ -30,21 +31,9 @@
   flex-direction: column;
   width: 100%;
   max-width: 350px;
-  margin-right: 30px;
-  margin-bottom: 76px;
+  margin: 38px 15px;
   padding: 32px 24px 56px 24px;
   background-color: $sacramento-state-green;
-
-  &:nth-child(3){
-    margin-right: 0;
-  }
-  &:nth-child(6){
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 4){
-    margin-bottom: 0;
-  }
 }
 
 .item__img{
@@ -66,7 +55,7 @@
   color: $white;
 }
 
-.item__plus{
+.item__plus, .item__plus-two, .item__plus-there, .item__plus-four, .item__plus-five, .item__plus-six{
   position: absolute;
   left: calc(50% - 25px);
   bottom: -28px;
@@ -79,11 +68,6 @@
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center;
-
-  &--open{
-    background-color: $rapture-blue;
-    background-image: url("../images/iks-x.svg");
-  }
 }
 
 .item__subject{
@@ -118,25 +102,47 @@
   }
 }
 
-.item__x{
 
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+
+  .director__list{
+    margin: -38px -5.5px;
+    justify-content: center;
+  }
+
+  .director__item{
+    max-width: 281px;
+    margin: 38px 5.5px;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 768px) {
 
-  
+  .about-director{
+    padding: 120px 0;
+    background-position: calc(50% - 390px) top, calc(50% + 310px) bottom;
+  }
+
+  .director__title{
+    margin-bottom: 3rem;
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 @media only screen and (max-width: 376px) {
 
-
+  .about-director{
+    padding: 120px 0;
+    background-position: calc(50% - 190px) calc(50% - 1105px), calc(50% + 120px) bottom;
+  }
 }
