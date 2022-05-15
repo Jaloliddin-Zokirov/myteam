@@ -1,0 +1,138 @@
+.about-director{
+  padding: 140px 0;
+  background-color: $deep-jungle-green;
+  background-image: url("../images/director-bgi.svg"), url("../images/content-top-bgi.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 147px 100px;
+  background-position: calc(50% - 760px) top, calc(50% + 680px) bottom;
+  text-align: center;
+}
+
+.director__title{
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: $white;
+}
+
+.director__list{
+  @include flex-starter;
+  @include list-global;
+  flex-wrap: wrap;
+}
+
+.director__item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  margin-right: 30px;
+  margin-bottom: 76px;
+  padding: 32px 24px 56px 24px;
+  background-color: $sacramento-state-green;
+
+  &:nth-child(3){
+    margin-right: 0;
+  }
+  &:nth-child(6){
+    margin-right: 0;
+  }
+
+  &:nth-child(n + 4){
+    margin-bottom: 0;
+  }
+}
+
+.item__img{
+  margin-bottom: 1rem;
+}
+
+.item__title{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: $rapture-blue;
+}
+
+.item__text{
+  display: inline-block;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white;
+}
+
+.item__plus{
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: -28px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $light-coral;
+  border-radius: 50%;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center;
+}
+
+.item__subject{
+  margin-bottom: 8px;
+}
+
+.item__desc{
+  display: inline-block;
+  width: 254px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white;
+}
+
+.item__link-box{
+  display: flex;
+}
+
+.item__link{
+  display: inline-block;
+  margin-right: 1rem;
+  color: $white;
+
+  &:nth-child(2){
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: $light-coral;
+  }
+}
+
+.item__x{
+  background-color: $rapture-blue;
+  background-image: url("../images/iks-x.svg");
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  
+}
+
+@media only screen and (max-width: 376px) {
+
+
+}
